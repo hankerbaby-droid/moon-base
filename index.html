@@ -1,0 +1,351 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>月球基地 · 人类第二家园</title>
+  <meta name="description" content="探索人类首个永久性月球基地——集科研、居住、能源一体的未来城市">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==================== 导航栏 ==================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <svg class="logo-icon" viewBox="0 0 40 40" width="36" height="36">
+          <circle cx="20" cy="20" r="16" fill="none" stroke="currentColor" stroke-width="2.5"/>
+          <circle cx="15" cy="17" r="2" fill="currentColor" opacity="0.6"/>
+          <circle cx="25" cy="16" r="1.5" fill="currentColor" opacity="0.4"/>
+          <circle cx="18" cy="25" r="1.2" fill="currentColor" opacity="0.5"/>
+          <path d="M10 30 Q20 35 30 30" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
+          <path d="M20 4 L20 8 M20 32 L20 36" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
+        </svg>
+        <span class="logo-text">月球基地</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#overview" class="nav-link">基地概览</a>
+        <a href="#panorama" class="nav-link">全景展示</a>
+        <a href="#facilities" class="nav-link">核心设施</a>
+        <a href="#media" class="nav-link">影像记录</a>
+        <a href="#timeline" class="nav-link">建设历程</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="菜单">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ==================== 英雄区 ==================== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-video">
+      <video autoplay muted loop playsinline poster="assets/images/概念图.png">
+        <source src="assets/videos/月球基地概念视频_压缩.mp4" type="video/mp4">
+      </video>
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">国际月球科研站 · 2042</div>
+      <h1 class="hero-title">月球基地</h1>
+      <p class="hero-subtitle">人类首个永久性月球综合科研居住基地</p>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number" data-target="8">0</span><span class="stat-suffix">年</span>
+          <span class="stat-label">建设周期</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="1200">0</span><span class="stat-suffix">人</span>
+          <span class="stat-label">常驻人员</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="15">0</span><span class="stat-suffix">个</span>
+          <span class="stat-label">核心模块</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="380">0</span><span class="stat-suffix">天</span>
+          <span class="stat-label">持续运行</span>
+        </div>
+      </div>
+      <a href="#overview" class="hero-scroll">
+        <span>向下探索</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ==================== 基地概览 ==================== -->
+  <section class="section section-alt" id="overview">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">ABOUT</span>
+        <h2 class="section-title">基地概览</h2>
+        <p class="section-desc">人类文明迈出地球摇篮，在月球表面建立第一个永久性综合基地</p>
+      </div>
+      <div class="overview-grid">
+        <div class="overview-image">
+          <div class="image-frame">
+            <img src="assets/images/概念图.png"
+                 alt="月球基地概念图"
+                 loading="lazy">
+            <div class="image-caption">月球基地 · 概念设计图</div>
+          </div>
+        </div>
+        <div class="overview-text">
+          <h3>月面第一城</h3>
+          <p>月球基地坐落于月球南极沙克尔顿陨石坑边缘，利用永久光照区与永久阴影区的独特地理优势，同时获取太阳能与水资源。基地占地约 2.3 平方公里，由 15 个功能模块组成，可容纳 1200 名科研人员与工程师长期驻留。</p>
+          <p>基地采用全封闭式生态循环系统，实现水、氧气、食物的 95% 循环利用率。能源由核聚变反应堆与大面积太阳能电池阵共同提供，总装机容量达 85 MW。</p>
+          <ul class="feature-list">
+            <li><svg viewBox="0 0 20 20" fill="currentColor" width="18"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm-1-9l4-4 1.5 1.5L10 12l-3-3 1.5-1.5L9 9z"/></svg> 自主研发的生态循环系统</li>
+            <li><svg viewBox="0 0 20 20" fill="currentColor" width="18"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm-1-9l4-4 1.5 1.5L10 12l-3-3 1.5-1.5L9 9z"/></svg> 氦-3 核聚变清洁能源</li>
+            <li><svg viewBox="0 0 20 20" fill="currentColor" width="18"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm-1-9l4-4 1.5 1.5L10 12l-3-3 1.5-1.5L9 9z"/></svg> 月壤原位 3D 打印建筑技术</li>
+            <li><svg viewBox="0 0 20 20" fill="currentColor" width="18"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm-1-9l4-4 1.5 1.5L10 12l-3-3 1.5-1.5L9 9z"/></svg> 地月高频通讯中继网络</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 全景展示 ==================== -->
+  <section class="section section-dark" id="panorama">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">PANORAMA</span>
+        <h2 class="section-title">全景展示</h2>
+        <p class="section-desc">360° 俯瞰月球基地全貌，感受人类工程的壮丽</p>
+      </div>
+      <div class="panorama-frame">
+        <img src="assets/images/全景图.png"
+             alt="月球基地全景图"
+             loading="lazy"
+             class="panorama-img">
+        <div class="panorama-overlay-text">
+          <span>南极沙克尔顿陨石坑 · 基地全貌</span>
+        </div>
+      </div>
+      <div class="panorama-features">
+        <div class="pano-feature">
+          <span class="pano-icon">&#9670;</span>
+          <h4>永久光照区</h4>
+          <p>基地选址于南极近永久光照区，确保太阳能持续供应</p>
+        </div>
+        <div class="pano-feature">
+          <span class="pano-icon">&#9670;</span>
+          <h4>水冰资源</h4>
+          <p>阴影陨石坑内蕴藏丰富水冰，为基地提供饮用水与燃料</p>
+        </div>
+        <div class="pano-feature">
+          <span class="pano-icon">&#9670;</span>
+          <h4>模块化布局</h4>
+          <p>15 个功能模块呈辐射状排列，便于未来扩展</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 核心设施 ==================== -->
+  <section class="section" id="facilities">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">FACILITIES</span>
+        <h2 class="section-title">核心设施</h2>
+        <p class="section-desc">四大关键模块支撑月球基地的日常运行与长远发展</p>
+      </div>
+      <div class="facilities-grid">
+        <article class="facility-card" data-delay="0">
+          <div class="card-image">
+            <img src="assets/images/生物舱.png"
+                 alt="生物舱" loading="lazy">
+            <span class="card-badge badge-bio">生态</span>
+          </div>
+          <div class="card-body">
+            <h3>生态循环种植舱</h3>
+            <p>全自动垂直农场与藻类反应器，提供新鲜蔬果、蛋白质并同步完成空气净化与水循环再生，是基地生命保障系统的核心。</p>
+          </div>
+        </article>
+        <article class="facility-card" data-delay="100">
+          <div class="card-image">
+            <img src="assets/images/jimeng-2025-12-27-1494-宇宙飞船睡眠舱.png"
+                 alt="睡眠舱" loading="lazy">
+            <span class="card-badge badge-life">居住</span>
+          </div>
+          <div class="card-body">
+            <h3>乘员居住模块</h3>
+            <p>模块化私人睡眠舱配备人工重力模拟、智能环境调节与心理舒缓系统，保障 1200 名乘员在低重力环境下的高质量休息。</p>
+          </div>
+        </article>
+        <article class="facility-card" data-delay="200">
+          <div class="card-image">
+            <img src="assets/images/内部工具和宇航服舱室.png"
+                 alt="工具与宇航服舱室" loading="lazy">
+            <span class="card-badge badge-trans">装备</span>
+          </div>
+          <div class="card-body">
+            <h3>工具与宇航服舱室</h3>
+            <p>集中存放与维护宇航服、月面作业工具及科学考察设备，配备快速除塵、检测与充能系统，保障月表 EVA 任务安全高效。</p>
+          </div>
+        </article>
+        <article class="facility-card" data-delay="300">
+          <div class="card-image">
+            <img src="assets/images/外景局部.png"
+                 alt="基地外景局部" loading="lazy">
+            <span class="card-badge badge-energy">能源</span>
+          </div>
+          <div class="card-body">
+            <h3>能源与通讯阵列</h3>
+            <p>月面太阳能电池阵列与深空通讯天线群，为基地提供清洁能源并保持与地球的高速数据链路。</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 影像记录 ==================== -->
+  <section class="section section-alt" id="media">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">MEDIA</span>
+        <h2 class="section-title">影像记录</h2>
+        <p class="section-desc">视频资料记录月球基地建设的关键技术与宏伟蓝图</p>
+      </div>
+
+      <div class="media-grid">
+        <div class="media-card media-card--featured">
+          <div class="media-video">
+            <video controls playsinline preload="metadata" poster="assets/images/概念图.png">
+              <source src="assets/videos/月球基地概念视频_压缩.mp4" type="video/mp4">
+              您的浏览器不支持视频播放
+            </video>
+          </div>
+          <div class="media-info">
+            <span class="media-tag">概念宣传</span>
+            <h3>月球基地 · 人类第二家园</h3>
+            <p>全方位展示月球基地的设计理念、功能布局与未来愿景，从能源、生态到居住，构建完整的月面城市蓝图。</p>
+          </div>
+        </div>
+        <div class="media-card">
+          <div class="media-video">
+            <video controls playsinline preload="metadata">
+              <source src="assets/videos/月壤砖.mp4" type="video/mp4">
+              您的浏览器不支持视频播放
+            </video>
+          </div>
+          <div class="media-info">
+            <span class="media-tag tag-tech">技术突破</span>
+            <h3>"月壤砖"：月面建筑材料</h3>
+            <p>利用月壤原位 3D 打印烧结成砖——未来在月球上盖房子的革命性建筑材料与技术验证。</p>
+          </div>
+        </div>
+      </div>
+      <p class="media-notice">&#127769; 以上视频为项目组基于真实航天数据制作的模拟渲染影像</p>
+    </div>
+  </section>
+
+  <!-- ==================== 建设历程 ==================== -->
+  <section class="section" id="timeline">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">TIMELINE</span>
+        <h2 class="section-title">建设历程</h2>
+        <p class="section-desc">从第一批构件着陆到全面运营，月球基地的建设之路</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2034</span>
+            <h4>先遣任务 · 选址勘测</h4>
+            <p>无人探测器在月球南极完成 12 处候选站点地质勘测，最终确认沙克尔顿陨石坑边缘为最佳建址。</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2036</span>
+            <h4>首批构件着陆</h4>
+            <p>三艘重型货运飞船先后着陆，运抵能源模块与生态循环系统的核心组件，自动搭建程序启动。</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2038</span>
+            <h4>首批驻留人员抵达</h4>
+            <p>12 名先遣队员入驻临时居住舱，启动生态循环系统并在月面开展首次大规模 3D 打印建筑作业。</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2040</span>
+            <h4>核聚变反应堆并网</h4>
+            <p>两座氦-3 核聚变反应堆成功实现临界，全基地供电能力提升至 85 MW，二期扩建工程启动。</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2042</span>
+            <h4>全面运营 · 正式启用</h4>
+            <p>15 个模块全部就位，常驻人员达 1200 人，月球基地正式转入全面科学运营阶段。</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2045+</span>
+            <h4>远景规划 · 月球城市</h4>
+            <p>计划扩建至 50 个模块，容纳 5000 人，建设月面工厂、天文台与深空探测中转站。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 页脚 ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <svg viewBox="0 0 40 40" width="40" height="40" fill="none">
+            <circle cx="20" cy="20" r="16" stroke="#6c8cff" stroke-width="2.5"/>
+            <path d="M10 30 Q20 35 30 30" stroke="#6c8cff" stroke-width="1.5" opacity="0.6"/>
+            <circle cx="15" cy="17" r="2" fill="#6c8cff" opacity="0.6"/>
+            <circle cx="25" cy="16" r="1.5" fill="#6c8cff" opacity="0.4"/>
+            <circle cx="18" cy="25" r="1.2" fill="#6c8cff" opacity="0.5"/>
+          </svg>
+          <p>月球基地 · 人类第二家园<br>国际月球科研站项目</p>
+        </div>
+        <div class="footer-links">
+          <h4>快速导航</h4>
+          <a href="#overview">基地概览</a>
+          <a href="#panorama">全景展示</a>
+          <a href="#facilities">核心设施</a>
+          <a href="#timeline">建设历程</a>
+        </div>
+        <div class="footer-links">
+          <h4>相关机构</h4>
+          <a href="#" target="_blank" rel="noopener">国际航天局</a>
+          <a href="#" target="_blank" rel="noopener">月球科研委员会</a>
+          <a href="#" target="_blank" rel="noopener">深空探索署</a>
+        </div>
+        <div class="footer-newsletter">
+          <h4>关注我们</h4>
+          <p>订阅月球基地最新动态</p>
+          <form class="subscribe-form">
+            <input type="email" placeholder="输入邮箱地址" required>
+            <button type="submit">订阅</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2042-2046 月球基地项目组 · 基于公开航天数据构建</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
